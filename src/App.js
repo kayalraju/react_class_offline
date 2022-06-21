@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import NavbarComponent from './classComponent/navbarComponent';
+import HomeComponent from './classComponent/Homecomponent';
+import FooterComponent from './classComponent/Footercomponent';
+import { HomeProps } from './Props/HomeProps';
+import Home from './conditionCheck/Home'
+import Student from './state/Student';
+import Memo from './reactMemo/Memo';
+import Highorder from './Hoc/Highorder';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     {/* <h1>welcome to webskitters</h1> */}
+     {/* <Home/> */}
+    {/* <Menu/> */}
+    {/* <ClassBaseComponent/> */}
+    {/* <NavbarComponent/>
+    <HomeComponent/>
+    <FooterComponent/> */}
+    {/* <HomeProps name={"aradhana"} email={"aradhana@gmail.com"} city={"kolkata"}/> */}
+    {/* <Home/> */}
+    {/* <Student/> */}
+    {/* <Memo/> */}
+    <Highorder/>
     </div>
   );
 }
